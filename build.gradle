@@ -1,0 +1,40 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven {
+            url 'http://repo.enonic.com/public'
+        }
+		maven {
+			url  "http://dl.bintray.com/qbrickipo/Enonic" 
+		}
+    }
+
+    dependencies {
+        classpath "com.enonic.xp:gradle-plugin:${xpVersion}"
+    }
+}
+
+apply plugin: 'com.enonic.xp.app'
+
+app {
+    name = project.appName
+    displayName = project.displayName
+    vendorName = 'Qbrick AB'
+    vendorUrl = 'http://qbrick.com'
+}
+
+dependencies {
+    include "com.enonic.xp:lib-portal:${xpVersion}"
+    include "com.enonic.xp:lib-thymeleaf:${xpVersion}"
+	include 'com.enonic.lib:lib-http-client:1.0.0'
+	include 'com.qbrick:qvp:0.8'
+}
+
+repositories {
+    mavenLocal()
+    jcenter()
+    maven {
+        url 'http://repo.enonic.com/public'
+    }
+}
