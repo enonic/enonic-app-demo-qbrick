@@ -28,7 +28,7 @@ dependencies {
     include "com.enonic.xp:lib-portal:${xpVersion}"
     include "com.enonic.xp:lib-thymeleaf:${xpVersion}"
 	include 'com.enonic.lib:lib-http-client:1.0.0'
-	include 'com.qbrick:qvp:0.8'
+	include 'com.qbrick:qvp:0.8.1'
 }
 
 repositories {
@@ -37,4 +37,7 @@ repositories {
     maven {
         url 'http://repo.enonic.com/public'
     }
+	maven {
+			url  "http://dl.bintray.com/qbrickipo/Enonic" 
+		}
 }
