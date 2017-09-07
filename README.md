@@ -1,6 +1,6 @@
 # com.qbrick.demo
 ## About
-This is an app for the Enonic Market, and a demo on how to use the qbrick lib(see https://github.com/qbrickipo/com.qbrick.qvp/)
+This is an app for the Enonic Market, and a demo on how to use the qbrick lib(see https://github.com/QbrickIPO/enonic-lib-qbrick)
 This app enables use of qbricks video player in rich textfields and as a part on a page.
 
 ## Installing
