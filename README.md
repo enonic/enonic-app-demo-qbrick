@@ -12,6 +12,19 @@ Once installed, add the app to your site and set your qbrick account ID. If you 
 
 This account contains videos explaining the app and lib.
 
+## Building
+If you want to build the app yourself, please follow these instructions
+Install git on you machine and open commandline and open the folder you want to install the app in:
+```
+git clone https://github.com/QbrickIPO/enonic-app-demo-qbrick
+
+```
+Once you have cloned the project, open the folder and build:
+```
+cd enonic-app-demo-qbrick
+gradlew build
+```
+
 ## Components
 ### Part Qbrick Video Player
 This is a part you can insert anywhere on your site and it will by default show a videoplayer with the newest published video on your account. The part uses the libs custom selector, where you can search for videos on your account. There are 3 settings for playback:
