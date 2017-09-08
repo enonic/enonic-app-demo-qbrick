@@ -1,43 +1,37 @@
-buildscript {
-    repositories {
-        mavenLocal()
-        jcenter()
-        maven {
-            url 'http://repo.enonic.com/public'
-        }
-		maven {
-			url  "http://dl.bintray.com/qbrickipo/Enonic" 
-		}
-    }
-
-    dependencies {
-        classpath "com.enonic.xp:gradle-plugin:${xpVersion}"
-    }
+plugins {
+    id 'java'
+    id 'com.enonic.xp.app' version '1.0.7'
+    id 'com.enonic.xp.run' version '1.0.7'
 }
 
-apply plugin: 'com.enonic.xp.app'
+group = 'com.qbrick' //used for maven repo publishing
+version = '0.1.10' //release version of this app
 
-app {
-    name = project.appName
-    displayName = project.displayName
+
+xp 
+{
+   version = '6.10.3'
+}
+
+app 
+{   
+    displayName = 'Qbrick Demo App'
     vendorName = 'Qbrick AB'
     vendorUrl = 'http://qbrick.com'
 }
 
 dependencies {
-    include "com.enonic.xp:lib-portal:${xpVersion}"
-    include "com.enonic.xp:lib-thymeleaf:${xpVersion}"
-	include 'com.enonic.lib:lib-http-client:1.0.0'
-	include 'com.qbrick:qvp:0.8'
+    include "com.enonic.xp:lib-portal:${xp.version}"
+    include "com.enonic.xp:lib-thymeleaf:${xp.version}"
+    include 'com.enonic.lib:lib-http-client:1.0.0'
+    include 'com.qbrick:qvp:0.8'
 }
 
 repositories {
     mavenLocal()
     jcenter()
-    maven {
-        url 'http://repo.enonic.com/public'
+    xp.enonicRepo()
+    maven {	
+	url  "http://dl.bintray.com/qbrickipo/Enonic" 
     }
-	maven {
-			url  "http://dl.bintray.com/qbrickipo/Enonic" 
-		}
 }
