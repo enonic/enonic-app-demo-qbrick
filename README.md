@@ -5,8 +5,7 @@ This app enables use of qbricks video player in rich textfields and as a part on
 
 ## Installing
 You need to have Enonic 6.10.3 or above to use this app.
-You can install this app directly from the Enonic Market or download the jar file(qbrick-0.1.10.jar) in the root of this repo.
-https://market.enonic.com
+You can install this app directly from the Enonic Market(Look for Qbrick Integration Demo), or clone this project to build it yourself.
 
 Once installed, add the app to your site and set your qbrick account ID. If you are not a customer of Qbrick, but want to see how this app works, use this ID in the settings: 2039052 
 
