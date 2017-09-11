@@ -1,7 +1,7 @@
 plugins {
     id 'java'
-    id 'com.enonic.xp.app' version '1.0.7'
-    id 'com.enonic.xp.run' version '1.0.7'
+    id 'com.enonic.xp.app' version '1.0.11'
+    id 'com.enonic.xp.run' version '1.0.11'
 }
 
 group = 'com.qbrick' //used for maven repo publishing
@@ -19,6 +19,7 @@ app
     displayName = 'Qbrick Demo App'
     vendorName = 'Qbrick AB'
     vendorUrl = 'http://qbrick.com'
+	includeSiteResources = true
 }
 
 dependencies {
