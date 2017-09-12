@@ -15,7 +15,6 @@ xp
 
 app 
 {   
-    name = 'com.qbrick.demo'
     displayName = 'Qbrick Demo App'
     vendorName = 'Qbrick AB'
     vendorUrl = 'http://qbrick.com'
