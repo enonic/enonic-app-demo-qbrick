@@ -39,3 +39,17 @@ This is a macro you can insert in your rich textfields. The macro uses the libs 
 
 ### Admin tool Qbrick Video Platform
 This is a tool that ads a button to the admin interface that takes you to the Qbrick Video Platform. 
+
+## Built With
+
+* [Enonic XP](http://www.enonic.com/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+
+## Authors
+
+* **Haakon Høier Sandvik** - *Developer* - [Hoier](https://github.com/Hoier)
+
+## Special Thanks
+
+* [Enonic Forum](https://discuss.enonic.com/)
+* Runar Brastad [rbrastad](https://github.com/rbrastad)
